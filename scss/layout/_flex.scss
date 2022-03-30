@@ -1,0 +1,71 @@
+@use '../sass-utils/variables' as *; 
+
+.wrapper {
+    display: flex;
+
+    @media screen and (max-width: 670px) {
+        flex-direction: column;
+    }
+
+    .content {
+        margin: 4em 0 0 8em;
+
+        @media screen and (max-width: 670px) {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+
+        .title {
+            margin-top: 1.5em;
+            font-size: 3.5em;
+            font-weight: 300;
+            max-width: 50%;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            color: $Desaturated-Red;
+
+            @media screen and (max-width: 670px) {
+                display: flex;
+                flex-direction: column;
+                font-size: 2.5em;
+                 max-width: 70%;
+            }
+
+            span {
+                font-weight: 600;
+                color: $Dark-Grayish-Red;
+            }
+        }
+
+        .subtitle {
+            font-size: .9em;
+            max-width: 60%;
+            margin: 1em 0 2.2em 0;
+            color: $Desaturated-Red;
+            line-height: 1.5em;
+
+            @media screen and (max-width: 670px) {
+                max-width: 71%;
+            }
+        }
+    }
+
+    .mobile-logo {
+        display: none;
+    }
+
+    @media screen and (max-width: 670px) {
+        .logo-desktop {
+            display: none;
+        }
+
+        .mobile-logo {
+            margin: 2em;
+            display: unset;
+            width: 120px;
+        }
+    }
+}

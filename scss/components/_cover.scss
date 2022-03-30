@@ -1,0 +1,13 @@
+.mobile-cover {
+    display: none;
+}
+
+@media screen and (max-width: 670px) {
+    .desktop-cover {
+        display: none;
+    }
+
+    .mobile-cover {
+        display: unset;
+    }
+}
